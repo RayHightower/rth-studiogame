@@ -1,0 +1,21 @@
+[I'm Klutz with a health of 20335 and a 20340 score.
+Klutz's treasure bag contains {:bottle=>2100, :broomstick=>17800, :crowbar=>29200, :pie=>314, :hammer=>4275, :skillet=>8650}.
+Klutz's Grand Total Points = 0
+
+, I'm Berserker with a health of 9770 and a 9779 score.
+Berserker's treasure bag contains {:bottle=>4675, :crowbar=>63600, :hammer=>7250, :pie=>960, :skillet=>16100, :broomstick=>31200}.
+Berserker's Grand Total Points = 0
+
+, I'm Alvin with a health of 1760 and a 1765 score.
+Alvin's treasure bag contains {:crowbar=>72400, :skillet=>14700, :bottle=>3775, :broomstick=>36200, :pie=>860, :hammer=>8400}.
+Alvin's Grand Total Points = 0
+
+, I'm Simon with a health of 1710 and a 1715 score.
+Simon's treasure bag contains {:bottle=>4325, :hammer=>8500, :skillet=>17800, :broomstick=>29800, :crowbar=>66000, :pie=>825}.
+Simon's Grand Total Points = 0
+
+, I'm Theodore with a health of 1455 and a 1463 score.
+Theodore's treasure bag contains {:broomstick=>34400, :skillet=>16400, :pie=>840, :bottle=>4200, :hammer=>8400, :crowbar=>64000}.
+Theodore's Grand Total Points = 0
+
+]
