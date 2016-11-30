@@ -30,6 +30,12 @@ module StudioGame
     it "displays the contents of the treasure bag" do
       hammer = Treasure.new(:hammer, 50)
       @player.found_treasure(hammer)
+      @player.found_treasure(hammer)
+      @player.found_treasure(hammer)
+
+      crowbar = Treasure.new(:crowbar, 400)
+      @player.found_treasure(crowbar)
+
       yielded = []
       @player.each_found_treasure do |treasure|
         yielded << treasure
