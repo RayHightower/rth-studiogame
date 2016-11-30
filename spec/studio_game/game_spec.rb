@@ -20,7 +20,7 @@ module StudioGame
       it "w00ts the player when a high number is spun" do
         @spinner = Spinner.any_instance.stub(:spin).and_return(5)
         @game.play(@number_of_rounds)
-        @player.health.should == @initial_health + (15 * @number_of_rounds)
+        expect(@player.health.should).to eq(@initial_health + (15 * @number_of_rounds))
       end
 
       it "does nothing when a medium number is spun" do
