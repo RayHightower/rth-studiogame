@@ -38,7 +38,6 @@ module StudioGame
         expect(@player.health).to eq(@initial_health - (10 * @number_of_rounds))
       end
 
-      it "runs guard when another spec is added"
 
     end
   end
