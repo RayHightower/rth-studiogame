@@ -1,4 +1,4 @@
-pragruby
+StudioGame
 ========
 
-Ruby immersion as part of RubyMotion learning.
+Ruby immersion, with RSpec.
