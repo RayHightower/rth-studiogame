@@ -7,32 +7,40 @@ module StudioGame
       @player = ClumsyPlayer.new("klutz",100,10)
     end
 
-    it "only gets half the point value for each treasure" do
-      @player.points.should == 0
+    it "initial point value should be zero" do
+      expect(@player.points).to eq 0
+    end
 
+    it "only gets half the point value for hammers" do
       hammer = Treasure.new(:hammer, 50)
       @player.found_treasure(hammer)
       @player.found_treasure(hammer)
       @player.found_treasure(hammer)
 
-      @player.points.should == 75
+      expect(@player.points).to eq 75
+    end
 
+    it "only gets half the point value for crowbars" do
       crowbar = Treasure.new(:crowbar, 400)
       @player.found_treasure(crowbar)
 
-      @player.points.should == 275
+      expect(@player.points).to eq 200
+    end
 
+    it "displays the contents of the treasure bag" do
+      hammer = Treasure.new(:hammer, 50)
+      @player.found_treasure(hammer)
       yielded = []
       @player.each_found_treasure do |treasure|
         yielded << treasure
       end
 
-      yielded.should == [Treasure.new(:hammer, 75), Treasure.new(:crowbar, 200)]
+      expect(yielded).to eq [Treasure.new(:hammer, 75), Treasure.new(:crowbar, 200)]
     end
 
     it "applies the boost factor as expected" do
       @player.w00t
-      @player.health.should == 250
+      expect(@player.health).to eq 250
     end
 
   end
